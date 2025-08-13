@@ -34,7 +34,7 @@ The dataset used is:
 ```
 spotify dataset.csv
 ```
-It must contain:
+It contains:
 - **playlist_genre** (string) — used to label clusters
 - Audio feature columns (numeric) — used for clustering
 - Optional: track details like `track_name`, `artist_name`, `album_name`
