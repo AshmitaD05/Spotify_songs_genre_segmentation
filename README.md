@@ -54,12 +54,12 @@ It must contain:
 ## 📝 Example Output
 
 
-📀 R&b Lovers (Cluster 0) Top Genres:
+📀 Rock mix Lovers Top Genres:
 - pop         320
 - dance pop   210
 - indie pop    50
 
-📀 Rock Lovers (Cluster 1) Top Genres:
+📀 Rap mix Lovers Top Genres:
 - rock        280
 - alt rock    140
 - punk rock    60
