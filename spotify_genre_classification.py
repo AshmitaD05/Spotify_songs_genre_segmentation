@@ -74,7 +74,13 @@ print("\nFinal DataFrame Shape:", df.shape)
 print("Columns:", df.columns.tolist())
 
 # STEP 9: Assign Human-Readable Cluster Names
-cluster_names = {}
+cluster_names = {
+    0: "EDM Rock Mix Lovers",
+    1: "R&B Dance Mix Lovers",
+    2: "Rap Latin Pop Lovers",
+    3: "R&B Rap Rock Lovers"
+}
+
 for c in sorted(df['cluster'].unique()):
     top_genre = df[df['cluster'] == c]['playlist_genre'].value_counts().idxmax()
     cluster_names[c] = f"{top_genre.capitalize()} Lovers"
@@ -129,4 +135,5 @@ for k in range(2, 11):
 
 # STEP 14: Save Final Data
 df.to_csv("spotify_clustered_final.csv", index=False)
+
 print("\nFinal clustered data saved as 'spotify_clustered_final.csv'")
